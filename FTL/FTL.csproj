@@ -382,6 +382,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="images\arrows-thin-x2.png" />
     <Content Include="images\arrows-thin.png" />
+    <Content Include="images\backgrounds\andromeda-background.jpg" />
     <Content Include="images\backgrounds\full-bg-1.jpg" />
     <Content Include="images\backgrounds\full-bg-10.jpg" />
     <Content Include="images\backgrounds\full-bg-11.jpg" />
@@ -402,6 +403,7 @@
     <Content Include="images\backgrounds\full-bg-7.jpg" />
     <Content Include="images\backgrounds\full-bg-8.jpg" />
     <Content Include="images\backgrounds\full-bg-9.jpg" />
+    <Content Include="images\backgrounds\pillars_wallpaper.jpg" />
     <Content Include="images\boomerang-logo-black.png" />
     <Content Include="images\boomerang-logo-white.png" />
     <Content Include="images\boomerang-school-logo-white.png" />
@@ -417,6 +419,8 @@
     <Content Include="images\clients\client-9.png" />
     <Content Include="images\clients\_notes\dwsync.xml" />
     <Content Include="images\favicon.png" />
+    <Content Include="images\FTLLogo-Dark.png" />
+    <Content Include="images\FTLLogo.png" />
     <Content Include="images\icons\buttons-icons-small-x2.png" />
     <Content Include="images\icons\buttons-icons-small.png" />
     <Content Include="images\icons\buttons-icons-x2.png" />
@@ -740,6 +744,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\less.js" />
+    <Content Include="Scripts\modernizr.custom.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\wp.app.js" />
     <Content Include="Scripts\wp.ga.js" />
