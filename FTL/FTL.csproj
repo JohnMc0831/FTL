@@ -156,6 +156,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="8B202F1BF5043251CEEB295EF8A2190E.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="assets\animate\animate.css" />
     <Content Include="assets\animate\animate.min.css" />
     <Content Include="assets\animate\_notes\dwsync.xml" />
@@ -377,7 +380,12 @@
     <Content Include="fonts\font-awesome\css\font-awesome.min.css" />
     <Content Include="fonts\font-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="favicon.ico" />
+    <Content Include="favicon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="favicon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="images\arrows-thin-x2.png" />
@@ -684,9 +692,7 @@
     <Content Include="images\temp\thumb-9.jpg" />
     <Content Include="images\webpixels-footer-logo.png" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
-    <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -728,6 +734,7 @@
     <Content Include="fonts\font-awesome\less\variables.less" />
     <None Include="Properties\PublishProfiles\ftltech.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\gmaps\google-maps-default.js" />
     <Content Include="Scripts\html5shiv.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -742,7 +749,6 @@
     <Content Include="Scripts\jquery.stellar.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\less.js" />
     <Content Include="Scripts\modernizr.custom.js" />
     <Content Include="Scripts\respond.js" />
@@ -763,7 +769,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Support.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Service References\Application Insights\ConnectedService.json" />
   </ItemGroup>
@@ -772,7 +778,6 @@
     <Folder Include="Content\less\" />
     <Folder Include="images\prv\blog\resized\" />
     <Folder Include="Models\" />
-    <Folder Include="Scripts\gmaps\" />
     <Folder Include="Scripts\graphs\" />
   </ItemGroup>
   <ItemGroup>

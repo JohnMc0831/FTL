@@ -155,18 +155,18 @@ $(document).ready(function() {
 	}
 	// Sortable list
 	$('#ulSorList').mixitup();
-	// Fancybox
-	$(".theater").fancybox();
-	// Fancybox	
-	$(".ext-source").fancybox({
-		'transitionIn'		: 'none',
-		'transitionOut'		: 'none',
-		'autoScale'     	: false,
-		'type'				: 'iframe',
-		'width'				: '50%',
-		'height'			: '60%',
-		'scrolling'   		: 'no'
-	});
+	//// Fancybox
+	//$(".theater").fancybox();
+	//// Fancybox	
+	//$(".ext-source").fancybox({
+	//	'transitionIn'		: 'none',
+	//	'transitionOut'		: 'none',
+	//	'autoScale'     	: false,
+	//	'type'				: 'iframe',
+	//	'width'				: '50%',
+	//	'height'			: '60%',
+	//	'scrolling'   		: 'no'
+	//});
 	// Stellar JS
 	$(".prlx-bg").stellar();
 	// Isotope Masonry
@@ -180,21 +180,21 @@ $(document).ready(function() {
 		  });
 	}
 	// Milestone counter
-	$('.milestone-count').countTo({
-        //from: 50,
-        //to: 250,
-        //speed: 1000,
-        //refreshInterval: 50,
-        formatter: function (value, options) {
-            return value.toFixed(options.decimals);
-        },
-        onUpdate: function (value) {
-            console.debug(this);
-        },
-        onComplete: function (value) {
-            console.debug(this);
-        }
-    });
+	//$('.milestone-count').countTo({
+    //    //from: 50,
+    //    //to: 250,
+    //    //speed: 1000,
+    //    //refreshInterval: 50,
+    //    formatter: function (value, options) {
+    //        return value.toFixed(options.decimals);
+    //    },
+    //    onUpdate: function (value) {
+    //        console.debug(this);
+    //    },
+    //    onComplete: function (value) {
+    //        console.debug(this);
+    //    }
+    //});
     // Range sliders
     if($('.range-slider-wrapper').length > 0){
     	var customToolTip = $.Link({
@@ -342,30 +342,30 @@ $(document).ready(function() {
 	// Scroll to top
 	$().UItoTop({ easingType: 'easeOutQuart' });
 	// Inview animations
-	$.fn.waypoint.defaults = {
-		context: window,
-		continuous: true,
-		enabled: true,
-		horizontal: false,
-		offset: 300,
-		triggerOnce: false
-	}	
-	$('.animate-in-view, .pie-chart').waypoint(function(direction) {
-		// Easy Pie Chart
-		$(".pie-chart").easyPieChart({
-			size:150,
-			easing: 'easeOutBounce',
-			onStep: function(from, to, percent) {
-				$(this.el).find('.percent').text(Math.round(percent));
-			},
-			barColor: '#FFF',
-			delay: 3000,
-			trackColor:'rgba(255,255,255,0.2)',
-			scaleColor:false,
-			lineWidth:16,
-			lineCap:'butt'
-		});
-	});
+	//$.fn.waypoint.defaults = {
+	//	context: window,
+	//	continuous: true,
+	//	enabled: true,
+	//	horizontal: false,
+	//	offset: 300,
+	//	triggerOnce: false
+	//}	
+	//$('.animate-in-view, .pie-chart').waypoint(function(direction) {
+	//	// Easy Pie Chart
+	//	$(".pie-chart").easyPieChart({
+	//		size:150,
+	//		easing: 'easeOutBounce',
+	//		onStep: function(from, to, percent) {
+	//			$(this.el).find('.percent').text(Math.round(percent));
+	//		},
+	//		barColor: '#FFF',
+	//		delay: 3000,
+	//		trackColor:'rgba(255,255,255,0.2)',
+	//		scaleColor:false,
+	//		lineWidth:16,
+	//		lineCap:'butt'
+	//	});
+	//});
 	// Search
 	if($('#btnSearch').length > 0){
 		// Search function
