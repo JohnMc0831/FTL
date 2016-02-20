@@ -478,6 +478,7 @@
     <Content Include="images\icons\svg\retina.svg" />
     <Content Include="images\icons\svg\toilet-paper.svg" />
     <Content Include="images\icons\visa.png" />
+    <Content Include="images\mari.jpg" />
     <Content Include="images\masonry\img-1.jpg" />
     <Content Include="images\masonry\img-2.jpg" />
     <Content Include="images\masonry\img-3.jpg" />
@@ -503,6 +504,7 @@
     <Content Include="images\patterns\slash-it.png" />
     <Content Include="images\patterns\squairy-light.png" />
     <Content Include="images\patterns\subtle-carbon.png" />
+    <Content Include="images\john.png" />
     <Content Include="images\prv\about-img-1.jpg" />
     <Content Include="images\prv\about-img-2.jpg" />
     <Content Include="images\prv\banner-img-1.jpg" />
