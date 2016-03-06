@@ -1,0 +1,151 @@
+﻿@{
+    ViewBag.Title = "HPN Support";
+}
+<div class="body-wrap">
+<!-- HEADER -->
+<div id="divHeaderWrapper">
+    <header class="header-standard-2">
+        <!-- MAIN NAV -->
+        <div class="navbar navbar-wp navbar-arrow mega-nav" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle navbar-toggle-aside-menu">
+                        <i class="fa fa-outdent icon-custom"></i>
+                    </button>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <i class="fa fa-bars icon-custom"></i>
+                    </button>
+
+                    <a class="navbar-brand" href="@Url.Action("Index", "Home")" title="FTL Tech | Solutions at the speed of light.">
+                        <img src="~/images/FTLLogo.png" alt="FTL Tech | Solutions at the speed of light.">
+                    </a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">HPN</a>
+                            <ul class="dropdown-menu">
+                                <li><a tabindex="-1" href="@Url.Action("About", "Home")">About HPN</a></li>
+                                <li><a tabindex="-1" href="@Url.Action("Support", "Home")">HPN Support</a></li>
+                            </ul>
+                        </li>
+                      
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+    </header>
+</div>
+
+<!-- Optional header components (ex: slider) -->
+<!-- MAIN CONTENT -->
+<div class="pg-opt">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Support HPN</h2>
+            </div>
+            <div class="col-md-6">
+                <ol class="breadcrumb">
+                    <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                    <li class="active">HPN Support</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="slice no-padding">
+    <div id="mapCanvas" class="map-canvas no-margin"></div>
+</section>
+
+    <section class="slice bg-white">
+        <div class="w-section inverse">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="section-title-wr">
+                            <h3 class="section-title left"><span>HPN Support</span></h3>
+                        </div>
+                        <p>
+                            HPN is a very simple app so hopefully you won't have any troubles with it,
+                            but if you do, then this is the place to come! Type up a quick note regarding
+                            the concern or question you have about HPN, and we will respond within 2 business
+                            days.  Thanks for your patience!
+                        </p>
+
+                        @using (Html.BeginForm())
+                        {
+                            <form class="form-light mt-20" role="form">
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    @Html.TextBox("Name", null, new {@class = "form-control", placeholder = "Your Name"})
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    @Html.TextBox("EMail", null, new { @class = "form-control", placeholder = "EMail Address", type = "email" })
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Subject</label>
+                                    @Html.TextBox("Subject", null, new {@class = "form-control", placeholder = "Subject"})
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Message</label>
+                                    @Html.TextArea("YourMessage", new { @class = "form-control", @style = "height:100px;", placeholder = "Write your message here..." })
+                                    @*<textarea class="form-control" id="message" placeholder="Write your message here..." style="height: 100px;"></textarea>*@
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <button type="submit" class="btn btn-base btn-icon btn-icon-right btn-fly pull-left">
+                                            <span>Send message</span>
+                                        </button>
+                                        <button type="reset" style="margin-left: 20px;" class="btn btn-light">Reset</button>
+                                    </div>
+                                </div>
+                            </form>
+                        }
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="section-title-wr">
+                                    <h3 class="section-title left"><span>Business info</span></h3>
+                                </div>
+                                <div class="contact-info">
+                                    <h5><i class="fa fa-map-marker"></i> Address</h5>
+                                    <p>80 French Road, Middlesex, Vermont 05602 U.S.A.</p>
+
+                                    <h5><i class="fa fa-envelope"></i> Email</h5>
+                                    <p>johnmc0831@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="section-title-wr">
+                                    <h3 class="section-title left"><span>Get HPN!</span></h3>
+                                </div>
+                                <div class="contact-info">
+                                    <h5><i class="fa fa-mobile"></i> iOS App Store</h5>
+                                    <p>Get HPN!</p>
+
+                                    <h5><i class="fa fa-google"></i> Google Play Store</h5>
+                                    <p>Get HPN!</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+@section Scripts{
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=true"></script>
+    <script type="text/javascript" src="~/Scripts/gmaps/google-maps-default.js"></script>
+
+}
