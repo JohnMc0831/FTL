@@ -732,9 +732,6 @@
     <Content Include="Privacy\img\tick-on.png" />
     <Content Include="Privacy\img\tick.png" />
     <Content Include="Privacy\index.html" />
-    <Content Include="Privacy\js\bootstrap.js" />
-    <Content Include="Privacy\js\bootstrap.min.js" />
-    <Content Include="Privacy\js\jquery.min.js" />
     <Content Include="Privacy\js\main.js" />
     <Content Include="Privacy\location-services.html" />
     <Content Include="Privacy\payments.html" />
@@ -782,7 +779,8 @@
     <Content Include="fonts\font-awesome\less\stacked.less" />
     <Content Include="fonts\font-awesome\less\variables.less" />
     <Content Include="Privacy\docs\README_AppPrivacy.pdf" />
-    <None Include="Properties\PublishProfiles\ftltech.pubxml" />
+    <None Include="Properties\PublishProfiles\ftltechllc - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\ftltechllc - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\gmaps\google-maps-default.js" />
     <Content Include="Scripts\html5shiv.js" />
