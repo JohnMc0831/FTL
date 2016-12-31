@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "HPN Support";
+    ViewBag.Title = "PatientAider Support";
 }
 <div class="body-wrap">
 <!-- HEADER -->
@@ -23,13 +23,13 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">HPN</a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">PatientAider</a>
                             <ul class="dropdown-menu">
-                                <li><a tabindex="-1" href="@Url.Action("About", "Home")">About HPN</a></li>
-                                <li><a tabindex="-1" href="@Url.Action("Support", "Home")">HPN Support</a></li>
+                                <li><a tabindex="-1" href="@Url.Action("About", "Home")">About PatientAider</a></li>
+                                <li><a tabindex="-1" href="@Url.Action("Support", "Home")">PatientAider Support</a></li>
                             </ul>
                         </li>
-                      
+
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
@@ -43,21 +43,21 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h2>Support HPN</h2>
+                <h2>Support PatientAider</h2>
             </div>
             <div class="col-md-6">
                 <ol class="breadcrumb">
                     <li><a href="@Url.Action("Index", "Home")">Home</a></li>
-                    <li class="active">HPN Support</li>
+                    <li class="active">PatientAider Support</li>
                 </ol>
             </div>
         </div>
     </div>
 </div>
 
-<section class="slice no-padding">
+@*<section class="slice no-padding">
     <div id="mapCanvas" class="map-canvas no-margin"></div>
-</section>
+</section>*@
 
     <section class="slice bg-white">
         <div class="w-section inverse">
@@ -65,13 +65,13 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="section-title-wr">
-                            <h3 class="section-title left"><span>HPN Support</span></h3>
+                            <h3 class="section-title left"><span>PatientAider Feedback</span></h3>
                         </div>
                         <p>
-                            HPN is a very simple app so hopefully you won't have any troubles with it,
+                            PatientAider is a very simple app so hopefully you won't have any troubles with it,
                             but if you do, then this is the place to come! Type up a quick note regarding
-                            the concern or question you have about HPN, and we will respond within 2 business
-                            days.  Thanks for your patience!
+                            the comment, concern or question you have about PatientAider, and we will respond
+                            within 2 business days.  Thanks for your patience!
                         </p>
 
                         @using (Html.BeginForm())
@@ -79,7 +79,7 @@
                             <form class="form-light mt-20" role="form">
                                 <div class="form-group">
                                     <label>Name</label>
-                                    @Html.TextBox("Name", null, new {@class = "form-control", placeholder = "Your Name"})
+                                    @Html.TextBox("Name", null, new { @class = "form-control", placeholder = "Your Name" })
                                 </div>
 
                                 <div class="form-group">
@@ -89,7 +89,7 @@
 
                                 <div class="form-group">
                                     <label>Subject</label>
-                                    @Html.TextBox("Subject", null, new {@class = "form-control", placeholder = "Subject"})
+                                    @Html.TextBox("Subject", null, new { @class = "form-control", placeholder = "Subject" })
                                 </div>
 
                                 <div class="form-group">
@@ -125,14 +125,14 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="section-title-wr">
-                                    <h3 class="section-title left"><span>Get HPN!</span></h3>
+                                    <h3 class="section-title left"><span>Get PatientAider!</span></h3>
                                 </div>
                                 <div class="contact-info">
                                     <p>
-                                        <a href="https://geo.itunes.apple.com/us/app/hospital-patient-navigator/id1021094466?mt=8" style="display: inline-block; overflow: hidden; background: url(http://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg) no-repeat; width: 165px; height: 40px;"></a>
+                                        <a href="https://itunes.apple.com/us/app/patientaider/id1178481752?mt=8" style="display: inline-block; overflow: hidden; background: url(http://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg) no-repeat; width: 165px; height: 40px;"></a>
                                     </p>
                                     <p>
-                                        <a href="https://play.google.com/store/apps/details?id=org.ftltech.HPN&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img alt="Get it on Google Play" height="40" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png"/></a>
+                                        <a href="https://play.google.com/store/apps/details?id=org.ftltech.patientaider&rdid=org.ftltech.patientaider"><img alt="Get it on Google Play" height="40" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" /></a>
                                     </p>
                                 </div>
                             </div>
