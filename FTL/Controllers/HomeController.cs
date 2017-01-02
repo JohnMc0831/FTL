@@ -32,8 +32,8 @@ namespace FTL.Controllers
         public async Task<ActionResult> Support(FormCollection fc)
         {
             //send email to info@patientsafetymovement.org
-            //SendGridAPI KEY:  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
-            string apiKey = "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";
+            //SendGridAPI KEY:  moved to secure storage.
+            string apiKey = "NOSOUPFORYOU";
             dynamic sg = new SendGridAPIClient(apiKey);
             Email from = new Email("patientaider@ftltech.org", "PatientAider Feedback Engine");
             string subject = fc["Subject"];
