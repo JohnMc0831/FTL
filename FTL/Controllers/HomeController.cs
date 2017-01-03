@@ -33,7 +33,7 @@ namespace FTL.Controllers
         {
             //send email to info@patientsafetymovement.org
             //SendGridAPI KEY:  moved to secure storage.
-            string apiKey = "NOSOUPFORYOU";
+            string apiKey = Environment.GetEnvironmentVariable("SendGridKey");
             dynamic sg = new SendGridAPIClient(apiKey);
             Email from = new Email("patientaider@ftltech.org", "PatientAider Feedback Engine");
             string subject = fc["Subject"];
